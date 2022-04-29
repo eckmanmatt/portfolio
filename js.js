@@ -1,5 +1,5 @@
 const goHome = () => {
-  $(window).scrollTop(0)
+window.location.href = 'file:///Users/matteckman/portfolioFINAL/bio.html'
 }
 const goBio = () => {
   $(window).scrollTop(0)
