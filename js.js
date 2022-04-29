@@ -1,14 +1,15 @@
 const goHome = () => {
-window.location.href = 'file:///Users/matteckman/portfolioFINAL/bio.html'
+$(window.location.href='file:////Users/matteckman/portfolioFINAL/index.html')
 }
+
 const goBio = () => {
-  $(window).scrollTop(0)
+  $(window.location.href='file:////Users/matteckman/portfolioFINAL/bio.html')
 }
 const goResume = () => {
-  $(window).scrollTop(0)
+  $(window.location.href='file:////Users/matteckman/portfolioFINAL/resume.html')
 }
 const goProjects = () => {
-  $(window).scrollTop('#projects')
+  $(window.location.href='file:////Users/matteckman/portfolioFINAL/projects.html')
 }
 
 const hideTopNav = () => {

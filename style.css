@@ -337,3 +337,11 @@ p#projects{
 .carousel-images img:first-of-type {
 	display: inline-block;
 }
+
+/* RESUME PAGE */
+.resume{
+  display: flex;
+  justify-content: center;
+  width: 300;
+  height: 500;
+}
