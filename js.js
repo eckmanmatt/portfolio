@@ -18,8 +18,8 @@ const hideTopNav = () => {
   // $('#top-nav').hide()
 }
 const showTopNav = () => {
-  $('#top-nav').css('slow')
-  $('#top-nav').css('display', 'inline')
+  $('#top-nav').css('slow');
+  $('#top-nav').css('display', 'flex');
 
 }
 
@@ -47,6 +47,7 @@ $(() => {
   $('#toggle').on('click', showTopNav)
 
 
+//####CAROUSEL
   let currentImgIndex = 0
   const numOfImages = $('.carousel-images').children().length - 1
 
@@ -71,7 +72,9 @@ $(() => {
   })
 
 
-
+  $("#logo").click(function() {
+    window.location.href = "file:////Users/matteckman/portfolioFINAL/index.html" + data.pdf1;
+});
 
 
 

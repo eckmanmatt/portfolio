@@ -1,11 +1,10 @@
 *{
   font-family: 'Libre Bodoni';
-  color: white;
+  color: #355E3B;
   scroll-behavior: smooth;
 }
 
 body{
-  background-color: #173637;
   width: auto;
 }
 
@@ -14,19 +13,42 @@ body{
   display: inline;
   text-align: center;
   margin: 0px;
+  background: #355E3B;
 }
 
 .header-bar{
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* padding-bottom: 25px; */
   margin: 25px;
+  margin-bottom: 0px;
   border-bottom: 3px solid white;
   border-left: 3px dashed white;
   border-radius: 5px;
 }
+.menu{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #355E3B
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #355E3B;
+  color: white;
+}
+.header{
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
 h1.greeting{
-  color: lightgrey;
   font-size: 125%;
   padding: 0;
   margin-top: 20px;
@@ -35,7 +57,6 @@ h1.greeting{
   text-align: right;
 }
 h1.based{
-  color: lightgrey;
   font-size: 125%;
   padding: 0;
   margin-top: 20px;
@@ -44,7 +65,6 @@ h1.based{
   text-align: right;
 }
 h1.current{
-  color: lightgrey;
   font-size: 125%;
   padding: 0;
   margin-top: 20px;
@@ -53,76 +73,92 @@ h1.current{
   text-align: right;
 }
 h2.name{
-  color: white;
   font-size: 250%;
-  text-align: right;
+  text-align: center;
   margin: 0;
 }
 h3{
-  color: lightgrey;
   font-size: 150%;
   text-align: center;
 }
-h3.city{
-  color: lightgrey;
-  font-size: 150%;
-  text-align: right;
-  margin: 0px;
+h3#emailL{
+  color: #355E3B;
+  font-size: 14px;
 }
-h3.ga{
-  color: lightgrey;
-  font-size: 150%;
-  text-align: right;
+h3#emailR{
+  color: white;
+  font-size: 14px;
+}
+h3.city{
+  font-size: 100%;
+  text-align: center;
   margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #cccccc; */
+}
+.emailDivL{
+  color: #355E3B;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  text-align: center;
+}
+.emailDivR{
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  text-align: center;
 }
 .welcome{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 20px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  margin-left: 0px;
+  margin-right: 20px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+  border-bottom: 3px solid white;
+  border-left: 3px dashed white;
+  border-radius: 5px;
 }
+
 p.message{
   display: flex;
   margin: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
   text-align: center;
   align-items: center;
-  border: 5px solid white;
-  border-style: outset;
+  border-top: 3px solid white;
+  border-right: 3px dashed white;
   border-radius: 5px;
 }
-p.message:hover{
-  display: flex;
-  margin-top: 20px;
-  text-align: center;
-  align-items: center;
-  color: #f2fefe;
-  border: 5px solid white;
-  border-style: inset;
-  border-radius: 5px;
-}
+
 
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #072743;
+  background-color: #355E3B;
   color: white;
   text-align: center;
+  border-top: 1px solid white;
 }
 
 
 /* NAV BUTTONS */
-#resume{
+/* #resume{
   display: inline;
   position: absolute;
   right: 10px;
-}
+} */
 
 #toggle{
   width: 15%;
@@ -131,7 +167,7 @@ p.message:hover{
 
 #top-nav{
   display: none;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
@@ -153,13 +189,13 @@ button{
   border: 3px solid white;
   border-style: outset;
   border-radius: 5px;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 10px;
   color: lightgrey;
   background-color: Transparent;
   /* opacity: .8; */
   transition-duration: .4s;
-  width: 75px;
+  width: 100px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
@@ -168,9 +204,9 @@ button:visited {
 }
 
 button:hover {
-  background-color: #02c6c9;
+  background-color: lightgrey;
   color: black;
-  box-shadow: 0 12px 16px 0 #02c6c9, 0 17px 50px 0 #02c6c9;
+  box-shadow: 0px 12px 18px 0px lightgrey;
   cursor: pointer;
 }
 
@@ -178,47 +214,55 @@ button:hover {
 /* LINKS */
 .links{
   position: fixed;
-  bottom: 50px;
+  bottom: 75px;
   display:flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   padding: 0px;
 }
 .fa {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0px 0px 10px 0px;
   font-size: 30px;
-  width: 50px;
+  width: 75px;
   text-decoration: none;
   margin: 5px 2px;
 }
 .fa:hover{
-  color: #02c6c9;
+  color: #355E3B;
   padding: 0px 0px 5px 0px;
   font-size: 30px;
   width: 50px;
   text-decoration: none;
   margin: 5px 2px;
+
 }
 .fa-linkedin {
-  color: white;
+  color: #355E3B;
 }
 .fa-github {
-  color: white;
+  color: #355E3B;
 }
-.fa-instagram {
-  color: white;
+.fa-codepen {
+  display: inline-flex;
+  justify-content: center;
+  color: #355E3B;
 }
 
 
 /* BIO/ABOUT ME SECTION */
 .bio{
   margin: 50px;
+  margin-top: 25px;
   display: block;
   text-align: center;
   padding: 50px;
-  border-top: 3px solid white;
-  border-right: 3px dashed white;
+  padding-top: 0px;
+  border-top: 3px solid #355E3B;
+  border-right: 3px dashed #355E3B;
   border-radius: 5px;
 }
 
@@ -242,23 +286,34 @@ button:hover {
 
 /* PROJECTS SECTION */
 .projects{
-  margin: 0px;
-  margin-top:0px;
-  margin-bottom:50px;
+  margin: 50px;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 50px;
   display: flex;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
-p#projects{
+.projectA{
+  padding: 10px;
   border-left: solid lightgrey;
-
+  border-right: solid lightgrey;
+}
+.projectB{
+  padding: 10px;
+  border-left: solid lightgrey;
+  border-right: solid lightgrey;
+}
+#projectHead{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
 }
 
 
 /* Carousel */
 .container {
-	display: flex;
+	display: block;
 	/* flex-direction: column;
 	align-items: center */
   margin: 5px;
@@ -283,7 +338,9 @@ p#projects{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  padding: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
   /* margin-right: 40px; */
 }
 .carousel-container {
@@ -304,7 +361,7 @@ p#projects{
 .carousel-images:hover {
 	width: auto;
   height: auto;
-	background: #f2fefe;
+	background: #355E3B;
 	padding: 10px;
 	border-radius: 10px;
 	box-sizing: border-box;
@@ -342,6 +399,9 @@ p#projects{
 .resume{
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background: #355E3B;
   width: 300;
   height: 500;
 }
