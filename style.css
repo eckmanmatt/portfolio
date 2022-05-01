@@ -164,7 +164,7 @@ p.message{
 } */
 
 #toggle{
-  width: auto;
+  width: 50px;
 }
 
 #top-nav{
@@ -175,6 +175,7 @@ p.message{
   padding: 0px;
 }
 
+
 #bottom-nav{
   display: flex;
   flex-direction: row;
@@ -183,7 +184,10 @@ p.message{
   margin: 0px;
   padding: 0px;
 }
-
+#top-nav .current{
+  background-color: #101D12;
+  color: white;
+}
 
 /* BUTTONS */
 button{
@@ -411,7 +415,4 @@ button:hover {
 }
 .resumePDF{
   height: 500px;
-}
-
-@media screen and (min-width: 600px) {
 }

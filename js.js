@@ -14,16 +14,14 @@ const goProjects = () => {
 
 const hideTopNav = () => {
   $('#top-nav').toggle('slow');
-  $('#toggle').removeClass("lnr-arrow-right");
-  $('#toggle').addClass("lnr-menu");
+  $('#toggle.lnr.lnr-menu').css('background-color', '#355E3B');
 
 }
 
 const showTopNav = () => {
   $('#top-nav').css('slow');
   $('#top-nav').css('display', 'flex');
-  $('#toggle').removeClass("lnr-menu");
-  $('#toggle').addClass("lnr-arrow-right");
+  $('#toggle.lnr.lnr-menu').css('background-color', '#101D12');
 }
 
 
