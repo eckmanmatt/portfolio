@@ -38,10 +38,41 @@ body{
 .logo{
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
   background: #355E3B;
   color: white;
+}
+#logo{
+  display: flex;
+  justify-content: center;
+}
+h3#emailL{
+  color: white;
+  font-size: 14px;
+}
+h3#emailR{
+  color: white;
+  font-size: 14px;
+}
+
+.emailDivL{
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  text-align: center;
+  width: 250px;
+}
+.emailDivR{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  width: 250px;
+  /* text-align: center; */
 }
 .header{
   display: block;
@@ -51,98 +82,21 @@ body{
   padding-right: 25px;
 
 }
-h1.greeting{
-  font-size: 125%;
-  padding: 0;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 0px;
-  text-align: right;
-}
-h1.based{
-  font-size: 125%;
-  padding: 0;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 0px;
-  text-align: right;
-}
-h1.current{
-  font-size: 125%;
-  padding: 0;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 0px;
-  text-align: right;
-}
+
+
 h2.name{
   font-size: 250%;
   text-align: center;
   margin: 0;
 }
-h3{
-  font-size: 150%;
-  text-align: center;
-}
-h3#emailL{
-  color: #355E3B;
-  font-size: 14px;
-}
-h3#emailR{
-  color: white;
-  font-size: 14px;
-}
-h3.city{
-  font-size: 100%;
+
+h3.details{
+  font-size: 18px;
   text-align: center;
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
   /* background-color: #cccccc; */
 }
-.emailDivL{
-  color: #355E3B;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-  text-align: center;
-}
-.emailDivR{
-  color: white;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-  text-align: center;
-}
-.welcome{
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 35%;
-  margin-left: 0px;
-  margin-right: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  border-bottom: 3px solid white;
-  border-left: 3px dashed white;
-  border-radius: 5px;
-}
-
-p.message{
-  display: flex;
-  margin: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  text-align: center;
-  align-items: center;
-  border-top: 3px solid white;
-  border-right: 3px dashed white;
-  border-radius: 5px;
-}
-
 
 .footer {
   position: fixed;
@@ -155,16 +109,19 @@ p.message{
   border-top: 1px solid white;
 }
 
+.footer .button{
+  width: 100px;
+  font-size: 24px;
+}
+
+
+
+
 
 /* NAV BUTTONS */
-/* #resume{
-  display: inline;
-  position: absolute;
-  right: 10px;
-} */
 
 #toggle{
-  width: 50px;
+  width: 100px;
 }
 
 #top-nav{
@@ -174,7 +131,10 @@ p.message{
   margin: 0px;
   padding: 0px;
 }
-
+#top-nav .current{
+  background-color: #101D12;
+  color: white;
+}
 
 #bottom-nav{
   display: flex;
@@ -184,10 +144,7 @@ p.message{
   margin: 0px;
   padding: 0px;
 }
-#top-nav .current{
-  background-color: #101D12;
-  color: white;
-}
+
 
 /* BUTTONS */
 button{
@@ -197,12 +154,14 @@ button{
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
-  color: lightgrey;
+  color: white;
+  font-size: 18px;
   background-color: Transparent;
   /* opacity: .8; */
   transition-duration: .4s;
-  width: auto;
+  width: 100px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
 }
 
 button:visited {
@@ -226,14 +185,15 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 0px;
+  /* font-size: 32px; */
+
 }
 .fa {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 0px 10px 0px;
-  font-size: 30px;
-  width: 75px;
+  width: 50px;
   text-decoration: none;
   margin: 5px 2px;
 }
@@ -266,10 +226,9 @@ button:hover {
   display: block;
   text-align: center;
   padding: 50px;
-  padding-top: 0px;
-  border-top: 3px solid #355E3B;
-  border-right: 3px dashed #355E3B;
-  border-radius: 5px;
+  padding-top: 20px;
+  color: white;
+  background-color: #355E3B
 }
 
 #bioHead{
@@ -279,14 +238,19 @@ button:hover {
   padding: 25px;
   text-decoration: underline;
   align-items: center;
+  color: white;
 }
 .about-me{
   padding: 25px;
   /* width: 80%;
   margin: 25px; */
+  border-top: 3px solid white;
+  border-right: 3px dashed white;
+  border-radius: 5px;
 }
 #bio{
   margin: 0;
+  color: white;
 }
 
 
@@ -338,6 +302,7 @@ button:hover {
 	letter-spacing: 2px;
 }
 .carousel{
+  width: auto;
   margin: 25px;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -415,4 +380,118 @@ button:hover {
 }
 .resumePDF{
   height: 500px;
+}
+
+/* iphone X */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+body{
+  height: auto;
+}
+}
+
+
+/* Ipad air */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+#toggle{
+  height: auto;
+  width: 100px;
+  font-size: 32px;
+}
+.menu .button{
+  height: auto;
+  width: 100px;
+  font-size: 32px;
+}
+#toggle .button{
+  height: auto;
+  width: 100px;
+  font-size: 32px;
+}
+
+.footer .button{
+  width: 100px;
+  font-size: 32px;
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #355E3B;
+  color: white;
+}
+h3#emailL{
+  color: white;
+  font-size: 14px;
+}
+h3#emailR{
+  color: white;
+  font-size: 14px;
+}
+
+.emailDivL{
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  text-align: center;
+}
+.emailDivR{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  /* text-align: center; */
+}
+.links{
+  position: fixed;
+  bottom: 75px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  font-size: 32px;
+
+}
+.fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 10px 0px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover{
+  color: #355E3B;
+  padding: 0px 0px 5px 0px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+.fa-linkedin {
+  color: #355E3B;
+}
+.fa-github {
+  color: #355E3B;
+}
+.fa-codepen {
+  display: inline-flex;
+  justify-content: center;
+  color: #355E3B;
+}
 }
