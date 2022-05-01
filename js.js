@@ -13,14 +13,17 @@ const goProjects = () => {
 }
 
 const hideTopNav = () => {
-  $('#top-nav').toggle('slow')
+  $('#top-nav').toggle('slow');
+  $('#toggle').removeClass("lnr-arrow-right");
+  $('#toggle').addClass("lnr-menu");
 
-  // $('#top-nav').hide()
 }
+
 const showTopNav = () => {
   $('#top-nav').css('slow');
   $('#top-nav').css('display', 'flex');
-
+  $('#toggle').removeClass("lnr-menu");
+  $('#toggle').addClass("lnr-arrow-right");
 }
 
 

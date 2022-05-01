@@ -1,7 +1,9 @@
+
 *{
   font-family: 'Libre Bodoni';
   color: #355E3B;
   scroll-behavior: smooth;
+  height: auto;
 }
 
 body{
@@ -35,7 +37,8 @@ body{
 }
 .logo{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: baseline;
   width: 100%;
   background: #355E3B;
   color: white;
@@ -161,8 +164,7 @@ p.message{
 } */
 
 #toggle{
-  width: 15%;
-  width: 75px;
+  width: auto;
 }
 
 #top-nav{
@@ -195,7 +197,7 @@ button{
   background-color: Transparent;
   /* opacity: .8; */
   transition-duration: .4s;
-  width: 100px;
+  width: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
@@ -399,9 +401,17 @@ button:hover {
 .resume{
   display: flex;
   justify-content: center;
+  margin: 25px;
   margin-top: 50px;
   padding-bottom: 50px;
+  padding-top: 50px;
   background: #355E3B;
-  width: 300;
-  height: 500;
+  width: auto;
+  height: auto;
+}
+.resumePDF{
+  height: 500px;
+}
+
+@media screen and (min-width: 600px) {
 }
