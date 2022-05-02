@@ -325,21 +325,14 @@ button:hover {
 	background: white;
 	padding: 10px;
 	border-radius: 10px;
-	box-sizing: border-box;
-	box-shadow: 2px 2px #016768;
 }
 .carousel-images #carouselLogo{
   background-color: #355E3B;
 }
 
 .carousel-images:hover {
-	width: auto;
-  height: auto;
-	background: #355E3B;
 	padding: 10px;
 	border-radius: 10px;
-	box-sizing: border-box;
-	box-shadow: 2px 2px #f2fefe;
 }
 .carousel-images img {
 	width: 100%;
