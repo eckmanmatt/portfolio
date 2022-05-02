@@ -1,14 +1,17 @@
 
 *{
   font-family: 'Libre Bodoni';
-  color: #355E3B;
+  color: #DBEADD;
   scroll-behavior: smooth;
   height: auto;
+
 }
 
 body{
   width: auto;
-  background-color: #EBEFEB;
+  background-image: url('https://i.imgur.com/NWaQLeB.png?1');
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .nav-bar{
@@ -182,7 +185,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  /* font-size: 32px; */
+  font-size: 24px;
 
 }
 .fa {
@@ -193,26 +196,36 @@ button:hover {
   width: 50px;
   text-decoration: none;
   margin: 5px 2px;
+  font-size: 24px;
 }
 .fa:hover{
-  color: #355E3B;
+  color: #DBEADD;
   padding: 0px 0px 5px 0px;
-  font-size: 30px;
+  font-size: 32px;
   width: 50px;
   text-decoration: none;
   margin: 5px 2px;
 
 }
 .fa-linkedin {
-  color: #355E3B;
+  display: inline-flex;
+  justify-content: center;
+  color: #DBEADD;
 }
 .fa-github {
-  color: #355E3B;
+  display: inline-flex;
+  justify-content: center;
+  color: #DBEADD;
 }
 .fa-codepen {
   display: inline-flex;
   justify-content: center;
-  color: #355E3B;
+  color: #DBEADD;
+}
+.fa-spotify {
+  display: inline-flex;
+  justify-content: center;
+  color: #DBEADD;
 }
 
 
@@ -310,7 +323,7 @@ button:hover {
 .carousel-container {
 	width: 70%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
   height: auto;
 }
 .carousel-images {
@@ -378,10 +391,12 @@ button:hover {
   and (max-device-width: 800px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
-body{
-  height: auto;
-  width: auto;
-}
+  body{
+    width: auto;
+    background-image: url('https://i.imgur.com/NWaQLeB.png?1');
+    background-repeat: repeat;
+    background-size: cover;
+    }
 .nav-bar{
     display: block;
 }
@@ -389,28 +404,28 @@ body{
 h2.name{
   font-size: 50px;
   font-weight: bold;
+  color: #DBEADD;
 }
 h3.details{
-  font-size: 28px;
+  font-size: 20px;
 }
-h3#email{
-  font-size: 22px;
+h3.logoLeft{
+  color: #DBEADD;
+  font-size: 14px;
+  text-decoration: none;
 }
-#toggle{
-  height: auto;
-  width: 100px;
-  font-size: 24px;
+h3.logoRight{
+  color: #DBEADD;
+  font-size: 14px;
+  text-decoration: none;
 }
-.menu .button{
-  height: auto;
-  width: 150px;
-  font-size: 24px;
+a{
+  text-decoration: none;
 }
-#toggle .button{
-  height: auto;
-  width: 100px;
-  font-size: 24px;
+.menu{
+  display: none;
 }
+
 .footer .button{
   width: 150px;
   font-size: 24px;
@@ -424,7 +439,6 @@ h3#email{
   align-items: center;
   padding: 0px;
   font-size: 32px;
-
 }
 .fa {
   display: flex;
@@ -442,22 +456,9 @@ h3#email{
   width: 50px;
   text-decoration: none;
   margin: 5px 2px;
-
-}
-.fa-linkedin {
-  color: #355E3B;
-}
-.fa-github {
-  color: #355E3B;
-}
-.fa-codepen {
-  display: inline-flex;
-  justify-content: center;
-  color: #355E3B;
 }
 
 }
-
 
 /* Ipad air */
 @media only screen
@@ -465,6 +466,13 @@ h3#email{
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
+    body{
+      width: auto;
+      background-image: url('https://i.imgur.com/NWaQLeB.png?1');
+      background-repeat: repeat;
+      background-size: cover;
+
+    }
 
 #toggle{
   height: auto;
@@ -488,16 +496,25 @@ h3#email{
 }
 .logo{
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   background: #355E3B;
   color: white;
 }
 
-h3#email{
-  color: white;
+h3.logoLeft{
+  color: #DBEADD;
   font-size: 14px;
+  text-decoration: none;
+}
+h3.logoRight{
+  color: #DBEADD;
+  font-size: 14px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
 }
 
 
@@ -546,15 +563,8 @@ h3#email{
   margin: 5px 2px;
 
 }
-.fa-linkedin {
-  color: #355E3B;
-}
-.fa-github {
-  color: #355E3B;
-}
-.fa-codepen {
-  display: inline-flex;
-  justify-content: center;
-  color: #355E3B;
+
+h2.name{
+  color: #DBEADD;
 }
 }
