@@ -375,7 +375,7 @@ button:hover {
   padding-top: 50px;
   background: #355E3B;
   width: auto;
-  height: auto;
+  height: 400px;
 }
 .resumeFiles{
   display: block;
