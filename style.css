@@ -329,6 +329,10 @@ button:hover {
 	box-sizing: border-box;
 	box-shadow: 2px 2px #016768;
 }
+.carousel-images #carouselLogo{
+  background-color: #355E3B;
+}
+
 .carousel-images:hover {
 	width: auto;
   height: auto;
