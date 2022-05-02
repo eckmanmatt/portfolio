@@ -4,7 +4,6 @@
   color: #DBEADD;
   scroll-behavior: smooth;
   height: auto;
-
 }
 
 body{
@@ -28,7 +27,6 @@ body{
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 10px;
-  /* padding-bottom: 25px; */
   margin: 25px;
   margin-bottom: 0px;
 }
@@ -72,7 +70,6 @@ h3#email{
   align-items: center;
   margin: 0px;
   width: 300px;
-  /* text-align: center; */
 }
 .header{
   display: block;
@@ -80,7 +77,7 @@ h3#email{
   margin-right: 25px;
   padding-left: 25px;
   padding-right: 25px;
-
+  width:100%;
 }
 
 
@@ -95,7 +92,23 @@ h3.details{
   text-align: center;
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
-  /* background-color: #cccccc; */
+}
+.intro{
+  display: block;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  margin: 100px;
+  padding: 50px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #355E3B;
+  border-radius: 10px;
+  background-color: #DBEADD;
+  opacity: .3;
+}
+.intro h3.details{
+  color: #355E3B;
+  opacity: 1;
 }
 
 .footer {
@@ -407,16 +420,16 @@ h2.name{
   color: #DBEADD;
 }
 h3.details{
-  font-size: 20px;
+  font-size: 28px;
 }
 h3.logoLeft{
   color: #DBEADD;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
 }
 h3.logoRight{
   color: #DBEADD;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
 }
 a{
