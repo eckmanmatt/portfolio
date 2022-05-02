@@ -73,9 +73,9 @@ $(() => {
   })
 
 
-  $("#logo").click(function() {
-    window.location.href = "file:////Users/matteckman/portfolioFINAL/index.html" + data.pdf1;
-});
+//   $("#logo").click(function() {
+//     window.location.href = "https://verdant-dusk-88782f.netlify.app/" + data.pdf1;
+// });
 
 
 

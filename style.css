@@ -49,11 +49,6 @@ body{
   justify-content: center;
   padding-top: 10px;
 }
-h3#email{
-  color: white;
-  font-size: 18px;
-}
-
 .logoLeft{
   color: white;
   display: inline-flex;
@@ -71,6 +66,15 @@ h3#email{
   margin: 0px;
   width: 300px;
 }
+h3#email{
+  color: white;
+  font-size: 24px;
+}
+a{
+  text-decoration: none;
+}
+
+
 .header{
   display: block;
   margin-left: 25px;
