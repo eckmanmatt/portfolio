@@ -99,16 +99,17 @@ h3.details{
   font-size: 18px;
   text-align: center;
   margin: 100px;
+  margin-top: 50px;
   padding: 50px;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid #355E3B;
   border-radius: 10px;
   background-color: #DBEADD;
-  opacity: .3;
+  width:auto;
 }
 .intro h3.details{
   color: #355E3B;
-  opacity: 1;
+  width: auto;
 }
 
 .footer {
