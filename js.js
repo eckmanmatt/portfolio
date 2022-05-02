@@ -1,15 +1,15 @@
 const goHome = () => {
-$(window.location.href='file:////Users/matteckman/portfolioFINAL/index.html')
+$(window.location.href='https://verdant-dusk-88782f.netlify.app/')
 }
 
 const goBio = () => {
-  $(window.location.href='file:////Users/matteckman/portfolioFINAL/bio.html')
+  $(window.location.href='https://verdant-dusk-88782f.netlify.app/bio')
 }
 const goResume = () => {
-  $(window.location.href='file:////Users/matteckman/portfolioFINAL/resume.html')
+  $(window.location.href='https://verdant-dusk-88782f.netlify.app/resume')
 }
 const goProjects = () => {
-  $(window.location.href='file:////Users/matteckman/portfolioFINAL/projects.html')
+  $(window.location.href='https://verdant-dusk-88782f.netlify.app/projects')
 }
 
 const hideTopNav = () => {
