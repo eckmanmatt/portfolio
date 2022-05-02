@@ -8,6 +8,7 @@
 
 body{
   width: auto;
+  background-color: #EBEFEB;
 }
 
 .nav-bar{
@@ -23,12 +24,10 @@ body{
   justify-content: center;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 10px;
   /* padding-bottom: 25px; */
   margin: 25px;
   margin-bottom: 0px;
-  border-bottom: 3px solid white;
-  border-left: 3px dashed white;
-  border-radius: 5px;
 }
 .menu{
   display: flex;
@@ -321,8 +320,8 @@ button:hover {
   height: auto;
 }
 .carousel-images {
-	width: auto;
-  height: auto;
+	width: 400px;
+  height: 400px;
 	background: white;
 	padding: 10px;
 	border-radius: 10px;
@@ -350,7 +349,7 @@ button:hover {
 .carousel-button {
   display: inline-flex;
 	align-self: center;
-	background: grey;
+	background: white;
 	color: black;
 	padding: 5px;
 	border-radius: 50%;
