@@ -370,16 +370,16 @@ button:hover {
 .resume{
   display: flex;
   justify-content: center;
-  margin: 25px;
-  margin-top: 50px;
+  margin: 50px;
   padding-bottom: 50px;
   padding-top: 50px;
   background: #355E3B;
   width: auto;
   height: auto;
 }
-.resumePDF{
-  height: 500px;
+.resumeFiles{
+  display: block;
+
 }
 
 /* iphone X */
