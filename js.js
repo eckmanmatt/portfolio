@@ -37,8 +37,11 @@ $(() => {
 
 
   $('#top-nav').append($('<button>').addClass('button lnr lnr-home').attr('id','home').attr('title','Home'))
+
   $('#top-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','aboutme').attr('title','Bio'))
+
   $('#top-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','projects').attr('title','Projects'))
+  
   $('#top-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','resume').attr('title','Resume'))
 
 

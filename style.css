@@ -13,13 +13,13 @@ body{
   background-size: cover;
 }
 
-.nav-bar{
+/* .nav-bar{
   list-style-type: none;
   display: inline;
   text-align: center;
-  margin: 0px;
+  margin: 10px;
   background: #355E3B;
-}
+} */
 
 .header-bar{
   display: flex;
@@ -33,7 +33,8 @@ body{
 .menu{
   display: flex;
   justify-content: flex-start;
-  background-color: #355E3B
+  background-color: #355E3B;
+  opacity: .9;
 }
 .logo{
   display: flex;
@@ -42,12 +43,14 @@ body{
   width: 100%;
   background: #355E3B;
   color: white;
+  opacity: .9;
 }
 
 #logo{
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  opacity: 1;
 }
 .logoLeft{
   color: white;
@@ -127,6 +130,7 @@ h3.details{
   color: white;
   text-align: center;
   border-top: 1px solid white;
+  opacity: .9;
 }
 
 .footer .button{
