@@ -28,24 +28,25 @@ const showTopNav = () => {
 
 $(() => {
 //####MENU BUTTONS
-  $('#home').on('click', goHome)
-  $('#aboutme').on('click', goBio)
-  $('#resume').on('click', goResume)
-  $('#projects').on('click', goProjects)
 
-
-
-
-//####FOOTER BUTTONS
-  $('#footHome').on('click', goHome)
-  $('#footBio').on('click', goBio)
-  $('#footResume').on('click', goResume)
-  $('#footProjects').on('click', goProjects)
 
 
 //####TOGGLE MENU TO DISPLAY
   $('#toggle').on('click', hideTopNav)
   $('#toggle').on('click', showTopNav)
+
+
+  $('#top-nav').append($('<button>').addClass('button lnr lnr-home').attr('id','home').attr('title','Home'))
+  $('#top-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','aboutme').attr('title','Bio'))
+  $('#top-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','projects').attr('title','Projects'))
+  $('#top-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','resume').attr('title','Resume'))
+
+
+  $('#home').on('click', goHome)
+  $('#aboutme').on('click', goBio)
+  $('#resume').on('click', goResume)
+  $('#projects').on('click', goProjects)
+
 
 
 //####CAROUSEL
@@ -73,10 +74,20 @@ $(() => {
   })
 
 
-//   $("#logo").click(function() {
-//     window.location.href = "https://verdant-dusk-88782f.netlify.app/" + data.pdf1;
-// });
+
+$('#bottom-nav').append($('<button>').addClass('button lnr lnr-home').attr('id','footHome').attr('title','Home'))
+
+$('#bottom-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','footBio').attr('title','Bio'))
+
+$('#bottom-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','footProjects').attr('title','Projects'))
+
+$('#bottom-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','footResume').attr('title','Resume'))
 
 
+//####FOOTER BUTTONS
+  $('#footHome').on('click', goHome)
+  $('#footBio').on('click', goBio)
+  $('#footResume').on('click', goResume)
+  $('#footProjects').on('click', goProjects)
 
 })

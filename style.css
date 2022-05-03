@@ -348,7 +348,7 @@ button:hover {
 .carousel-images {
 	width: 400px;
   height: 400px;
-	background: white;
+	background: #355E3B;
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -368,21 +368,26 @@ button:hover {
 .carousel-button {
   display: inline-flex;
 	align-self: center;
-	background: white;
+	background: #355E3B;
 	color: black;
 	padding: 5px;
 	border-radius: 50%;
 	text-align: center;
-	box-shadow: 1px 1px #016768;
+	box-shadow: 1px 1px #DBEADD;
   transform: scale(1);
 }
 .carousel-button:hover {
 	cursor: pointer;
 	background: #f2fefe;
-	box-shadow: 1px 1px black;
-	color: black;
+	color: #355E3B;
   transform: scale(1);
 }
+/* .lnr-pointer-right:hover{
+  color: #355E3B;
+}
+.lnr-pointer-left:hover{
+  color: #355E3B;
+} */
 
 .carousel-images img:first-of-type {
 	display: inline-block;
