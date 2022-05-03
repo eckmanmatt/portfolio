@@ -41,7 +41,7 @@ $(() => {
   $('#top-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','aboutme').attr('title','Bio'))
 
   $('#top-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','projects').attr('title','Projects'))
-  
+
   $('#top-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','resume').attr('title','Resume'))
 
 
@@ -52,7 +52,20 @@ $(() => {
 
 
 
-//####CAROUSEL
+  $('.links').append($('<a>').attr('href', 'https://www.linkedin.com/in/mattheweckman/').attr('target','_blank').addClass('fa fa-linkedin'))
+
+  $('.links').append($('<a>').attr('href', 'https://github.com/eckmanmatt/portfolioFinal/').attr('target','_blank').addClass('fa fa-github'))
+
+  $('.links').append($('<a>').attr('href', 'https://codepen.io/matteckman/').attr('target','_blank').addClass('fa fa-codepen'))
+
+  $('.links').append($('<a>').attr('href', 'https://open.spotify.com/user/matt.eckman/').attr('target','_blank').addClass('fa fa-spotify'))
+
+
+
+  $('.logoLeft').append($('<h3>').attr('id','email').text('Atlanta, GA'))
+  
+
+//####CAROUSEL -REFERENCED CORGI CAROUSEL FROM EXERCISE
   let currentImgIndex = 0
   const numOfImages = $('.carousel-images').children().length - 1
 

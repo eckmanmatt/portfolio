@@ -256,12 +256,15 @@ button:hover {
 .bio{
   margin: 50px;
   margin-top: 25px;
+  margin-bottom: 100px;
   display: block;
   text-align: center;
   padding: 50px;
   padding-top: 20px;
+  padding-bottom: 100px;
   color: white;
-  background-color: #355E3B
+  background-color: #355E3B;
+  /* height:auto; */
 }
 
 #bioHead{
