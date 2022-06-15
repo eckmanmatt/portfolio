@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>M. Eckman Portfolio - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M. Eckman Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js.js"></script>
@@ -14,72 +15,142 @@
 			rel="stylesheet"
 			href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
 		/>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-</style>
+
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  </head>
+    </style>
   </head>
   <body>
     <div class="nav-bar">
-
       <div class="logo">
         <div class="logoLeft">
+          <h4 id = 'title'>Full Stack Software Engineer</h4>
+          <h4 id='city'>Atlanta, GA</h4>
+          <a href = 'mailto: matt.eckman@icloud.com'><h4 id = 'email'>matt.eckman@icloud.com</h4></a>
         </div>
-        
-        <div id='logo'><a href = 'https://verdant-dusk-88782f.netlify.app/'><img src="https://i.imgur.com/aqvYQto.png" alt="Matt Eckman logo" width="250" height="250"></a>
-        </div>
-        <div class="logoRight">
-          <a href = 'mailto: matt.eckman@icloud.com'><h3 id = 'email'>matt.eckman@icloud.com</h3></a>
-        </div>
-      </div>
 
-      <div class = "menu">
-        <button id="toggle" class= "lnr lnr-menu"></button>
-        <ul id = 'top-nav'>
+        <div id='logo'>
+            <a href = 'https://verdant-dusk-88782f.netlify.app/'><img src="https://i.imgur.com/aqvYQto.png" alt="Matt Eckman logo" width="250" height="250"></a>
+        </div>
 
-        </ul>
+        <div class="logoRight" id ='top-nav'>
+            <button id='proButton' type="button" onClick="document.getElementById('projects').scrollIntoView()">Projects</button>
+            <button id='resButton' type="button" onClick="document.getElementById('resume').scrollIntoView()">Resume</button>
+        </div>
       </div>
     </div>
 
-    <div class = "header-bar">
-      <div class="header">
-        <h2 class = 'name'>Matt Eckman</h2>
-        <h3 class = 'details'>ATLANTA, GA</h3>
-        <h3 class = 'details'>SOFTWARE ENGINEER</h3>
-        <h3 class = 'details'>GENERAL ASSEMBLY STUDENT</h3>
 
+
+
+
+
+    <div class= 'bio' >
+      <h4 id='bio'>
+        I am a results-driven, software engineer with my main focus on complex full-stack development.
+        <br>
+        <br>
+        Creating solutions and resolving end-user needs is my passion after spending nearly 7 years in software support.
+        <br>
+        <br>
+        My analytical mindset and restless curiosity make me an asset on cross-functional teams, as we work together to achieve organizational goals.
+      </h4>
     </div>
-  </div>
-    <div class="carousel">
-            <div class="carousel-container">
-              <div class="carousel-button previous">
-                <span class="lnr lnr-pointer-left"></span>
-              </div>
-              <div class="carousel-images">
-                <img src="https://i.imgur.com/4m6KxCG.jpg?1" title="source: imgur.com" />
-                <img id = 'carouselLogo' src="https://i.imgur.com/aqvYQto.png" title="source: imgur.com" />
-                <img src="https://i.imgur.com/jp6jdLP.png?1" title="source: imgur.com" />
-              </div>
-              <div class="carousel-button next">
-                <span class="lnr lnr-pointer-right"></span>
-              </div>
-            </div>
-          </div>
-      <div class="intro">
-         <h3 class = 'introDetails'>Welcome to my web-based portfolio!
-           <br> Please reach out to me if you would like to connect or have any questions.
-          <br>
-          <br>
-           Thanks!</h3>
-      </div>
 
+    <hr class="solid">
+
+    <div class="languagesTools">
+      <div class='icons'>
+        <i class="icon devicon-html5-plain-wordmark"></i>
+        <i class="icon devicon-css3-plain-wordmark"></i>
+        <i class="icon devicon-javascript-plain"></i>
+        <i class="icon devicon-python-plain"></i>
+        <i class="icon devicon-react-original"></i>
+        <i class="icon devicon-jquery-plain-wordmark"></i>
+        <i class="icon devicon-mongodb-plain-wordmark"></i>
+        <i class="icon devicon-mysql-plain"></i>
+        <i class="icon devicon-postgresql-plain"></i>
+        <i class="icon devicon-nodejs-plain"></i>
+        <i class="icon devicon-github-original"></i>
+        <i class="icon devicon-heroku-original-wordmark"></i>
+      </div>
+    </div>
+
+    <hr class="solid">
+
+
+    <h2 class="projectHead" id="projects">Projects</h2>
+
+<div class="projects">
+  <div class="container">
+    <div class="card bg-transparent border border-white rounded m-3 p-2">
+      <h3>Tic-Tac-Toe</h3>
+      <img class='projectImage text-center' src="https://i.imgur.com/ZiJphjU.png" alt="tic-tac-toe">
+      <br>
+      <p>A Tic-Tac-Toe browser game.
+        <br>
+        Uses HTML, CSS and Javascript.</p>
+      <div class="cardButtons">
+        <button class="cardButton" type="button" onclick="window.open('https://github.com/eckmanmatt/tic-tac-toe/tree/master', '_blank')">Live </button>
+        <button class="cardButton"type="button" onclick="window.open('https://github.com/eckmanmatt/tic-tac-toe/tree/master', '_blank')">Code</button>
+      </div>
+    </div>
+    <div class="card bg-transparent border border-white rounded m-3 p-2">
+      <h3>Tic-Tac-Toe</h3>
+      <img class='projectImage text-center' src="https://i.imgur.com/ZiJphjU.png" alt="tic-tac-toe">
+      <br>
+      <p>A Tic-Tac-Toe browser game.
+        <br>
+        Uses HTML, CSS and Javascript.</p>
+      <div class="cardButtons">
+        <button class="cardButton" type="button" onclick="window.open('https://github.com/eckmanmatt/tic-tac-toe/tree/master', '_blank')">Live </button>
+        <button class="cardButton"type="button" onclick="window.open('https://github.com/eckmanmatt/tic-tac-toe/tree/master', '_blank')">Code</button>
+      </div>
+    </div>
+    </div>
+</div>
+
+<hr class="solid">
+
+
+<h2 class="resumeHead" id='resume'>Resume</h2>
+
+    <div class="resume container">
+      <iframe class = 'resumeFile' src = "resume_linkedin.pdf">
+      </iframe>
+    </div>
+    <div class="resumeMobile container">
+      <h5>Test Resume</h5>
+    </div>
+
+    <hr class="solid">
+
+
+    <h2 class="contactHead" id='contact'>Contact</h2>
+
+        <div class="contact container">
+
+
+
+        </div>
 
     <div class= "links">
+       <!-- jquery -->
+    </div>
+
+    <div class= "pageNav">
+      <!-- jquery -->
     </div>
 
 
-    <div class="footer">
-      <ul id = 'bottom-nav'>
-      </ul>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

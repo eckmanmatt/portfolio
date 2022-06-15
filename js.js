@@ -27,77 +27,44 @@ const showTopNav = () => {
 
 
 $(() => {
-//####MENU BUTTONS
+
+
+// //####TOGGLE MENU TO DISPLAY
+//   $('#toggle').on('click', hideTopNav)
+//   $('#toggle').on('click', showTopNav)
+//
+//
+//   $('#top-nav').append($('<button>').addClass('button lnr lnr-home').attr('id','home').attr('title','Home'))
+//
+//   $('#top-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','aboutme').attr('title','Bio'))
+//
+//   $('#top-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','projects').attr('title','Projects'))
+//
+//   $('#top-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','resume').attr('title','Resume'))
 
 
 
-//####TOGGLE MENU TO DISPLAY
-  $('#toggle').on('click', hideTopNav)
-  $('#toggle').on('click', showTopNav)
+  $('.links').append($('<a>').attr('href', 'https://www.linkedin.com/in/mattheweckman/').attr('target','_blank').addClass('linkL fa fa-linkedin'))
 
+  $('.links').append($('<a>').attr('href', 'https://github.com/eckmanmatt/portfolioFinal/').attr('target','_blank').addClass('linkL fa fa-github'))
 
-  $('#top-nav').append($('<button>').addClass('button lnr lnr-home').attr('id','home').attr('title','Home'))
+  $('.links').append($('<a>').attr('href', 'https://codepen.io/matteckman/').attr('target','_blank').addClass('linkL fa fa-codepen'))
 
-  $('#top-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','aboutme').attr('title','Bio'))
-
-  $('#top-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','projects').attr('title','Projects'))
-
-  $('#top-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','resume').attr('title','Resume'))
-
-
-  $('#home').on('click', goHome)
-  $('#aboutme').on('click', goBio)
-  $('#resume').on('click', goResume)
-  $('#projects').on('click', goProjects)
+  $('.links').append($('<a>').attr('href', 'https://open.spotify.com/user/matt.eckman/').attr('target','_blank').addClass('linkL fa fa-spotify'))
 
 
 
-  $('.links').append($('<a>').attr('href', 'https://www.linkedin.com/in/mattheweckman/').attr('target','_blank').addClass('fa fa-linkedin'))
 
-  $('.links').append($('<a>').attr('href', 'https://github.com/eckmanmatt/portfolioFinal/').attr('target','_blank').addClass('fa fa-github'))
+  $('.pageNav').append($('<a>').attr('onClick', "document.getElementById('projects').scrollIntoView()").attr('target','_blank').addClass('linkR fa fa-code').attr('title','Scroll to Projects'))
 
-  $('.links').append($('<a>').attr('href', 'https://codepen.io/matteckman/').attr('target','_blank').addClass('fa fa-codepen'))
+  $('.pageNav').append($('<a>').attr('onClick', "document.getElementById('resume').scrollIntoView()").attr('target','_blank').addClass('linkR fa fa-briefcase').attr('title','Scroll to Resume'))
 
-  $('.links').append($('<a>').attr('href', 'https://open.spotify.com/user/matt.eckman/').attr('target','_blank').addClass('fa fa-spotify'))
-
-
-
-  $('.logoLeft').append($('<h3>').attr('id','email').text('Atlanta, GA'))
-  
-
-//####CAROUSEL -REFERENCED CORGI CAROUSEL FROM EXERCISE
-  let currentImgIndex = 0
-  const numOfImages = $('.carousel-images').children().length - 1
-
-  $('.next').on('click',() => {
-    $('.carousel-images').children().eq(currentImgIndex).css('display','none')
-    if (currentImgIndex < numOfImages){
-      currentImgIndex++
-    }else{
-      currentImgIndex = 0
-    }
-    $('.carousel-images').children().eq(currentImgIndex).css('display','block')
-  })
-
-  $('.previous').on('click',() => {
-    $('.carousel-images').children().eq(currentImgIndex).css('display','none')
-    if (currentImgIndex > 0){
-      currentImgIndex--
-    }else{
-      currentImgIndex = numOfImages
-    }
-    $('.carousel-images').children().eq(currentImgIndex).css('display','block')
-  })
+  $('.pageNav').append($('<a>').attr('onClick', "document.getElementById('contact').scrollIntoView()").attr('target','_blank').addClass('linkR fa fa-at').attr('title','Scroll to Contact'))
 
 
 
-$('#bottom-nav').append($('<button>').addClass('button lnr lnr-home').attr('id','footHome').attr('title','Home'))
 
-$('#bottom-nav').append($('<button>').addClass('button lnr lnr-user').attr('id','footBio').attr('title','Bio'))
 
-$('#bottom-nav').append($('<button>').addClass('button lnr lnr-code').attr('id','footProjects').attr('title','Projects'))
-
-$('#bottom-nav').append($('<button>').addClass('button lnr lnr-briefcase').attr('id','footResume').attr('title','Resume'))
 
 
 //####FOOTER BUTTONS
