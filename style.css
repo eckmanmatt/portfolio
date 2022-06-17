@@ -171,7 +171,12 @@ button#contactButton{
   color: white;
   margin: auto;
 }
+img.profile{
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid white;
 
+}
 .linkL{
   display: flex;
   justify-content: center;
@@ -221,6 +226,7 @@ button#contactButton{
   align-items: center;
   width: 70%;
   text-align: center;
+  border: 1px solid white;
   border-radius: 10px;
   color:white;
 }
@@ -228,6 +234,7 @@ button#contactButton{
 #bio{
   margin:25px;
 }
+
 .languagesTools{
   display: flex;
   flex-direction: row;
@@ -244,6 +251,8 @@ button#contactButton{
   border-radius: 10px;
   color:white;
   opacity: .9;
+  border: 1px solid white;
+
 }
 .icons{
   margin: 10px;
@@ -283,6 +292,8 @@ i{
   border-radius: 10px;
   width: 70%;
   opacity: .9;
+  border: 1px solid white;
+
 }
 
 .projectHead{
@@ -298,6 +309,8 @@ i{
   background-color: #355E3B;
   border-radius: 5px;
   width: 20%;
+  border: 1px solid white;
+
 }
 
 .projectImage{
@@ -368,6 +381,8 @@ i{
   background-color: #355E3B;
   border-radius: 5px;
   width: 20%;
+  border: 1px solid white;
+
 }
 
 
@@ -385,8 +400,9 @@ i{
   background-color: #355E3B;
   border-radius: 10px;
   width: 80%;
-}
+  border: 1px solid white;
 
+}
 
 .resumeFile{
   display: block;
@@ -437,6 +453,7 @@ i{
   width: 50%;
 }
 
+
  /* Mobile */
 @media only screen
   and (min-device-width: 374px)
@@ -446,7 +463,7 @@ i{
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 50px;
     }
     .logo{
       display: flex;
@@ -492,6 +509,9 @@ i{
       width:90%;
       height: 90%;
     }
+    .divider{
+      display: none;
+    }
 
     .contact.container{
       display: flex;
@@ -507,7 +527,12 @@ i{
       padding-top: 10px;
       padding-bottom: 50px;
     }
-
+    .profile{
+      display: flex;
+      justify-content: center;
+      width:80%;
+      margin: auto;
+    }
 
   }
 

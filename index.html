@@ -12,12 +12,11 @@
     <!-- JS/Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js.js"></script>
+		<!-- <script src="validate.js"></script> -->
 
     <!-- Fonts -->
       <!-- Libre Bodoni -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
-    </style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');</style>
       <!-- Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,35 +37,38 @@
   </head>
 
   <body>
-    <div class="headerBar">
+    <div class="headerBar"> <!-- This includes the entire header portion of the page. Would repeat on multiple pages, if needed -->
       <div class="logo">
-        <div class="logoLeft">
+
+        <div class="logoLeft"><!-- Title, City and Email -->
           <h4 id = 'title'>Full Stack Software Engineer</h4>
           <h4 id='city'>Atlanta, GA</h4>
           <a href = 'mailto: matt.eckman@icloud.com'><h4 id = 'email'>matt.eckman@icloud.com</h4></a>
         </div>
 
-        <div id='logo'>
+        <div id='logo'> <!-- Personal logo generated from Imgur -->
             <a href = 'https://verdant-dusk-88782f.netlify.app/'><img src="https://i.imgur.com/aqvYQto.png" alt="Matt Eckman logo" width="250" height="250"></a>
         </div>
 
-        <div class="logoRight" id ='top-nav'>
+
+        <div class="logoRight" id ='top-nav'> <!-- Navigation to each section -->
             <button id='proButton' type="button" onClick="document.getElementById('projects').scrollIntoView()">Projects</button>
             <button id='resButton' type="button" onClick="document.getElementById('resume').scrollIntoView()">Resume</button>
             <button id='contactButton' type="button" onClick="document.getElementById('contact').scrollIntoView()">Contact</button>
         </div>
       </div>
     </div>
-    <div class="divider text-center">
 
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <br>
-      <span class="dot"></span>
+    <div class="profile text-center"> <!-- Profile Pic -->
+
+      <img class="profile" src="https://i.imgur.com/4m6KxCG.jpg?1" alt="">
 
     </div>
-    <div class= 'bio' >
-      <h4 id='bio'>
+
+
+    <div class= 'bio' > <!-- Bio/Brand Statement -->
+
+      <h4 id='bio'> <!-- Brand Statement coming from LinkedIn/Resume -->
         I am a results-driven, software engineer with my main focus on complex full-stack development.
         <br>
         <br>
@@ -78,15 +80,13 @@
     </div>
 
     <div class="divider text-center">
-
       <span class="dot"></span>
       <span class="dot"></span>
       <br>
       <span class="dot"></span>
-
     </div>
 
-    <div class="languagesTools">
+    <div class="languagesTools"> <!-- Known languages, frameworks and tools -->
       <div class='icons'>
         <i class="icon devicon-html5-plain-wordmark"></i>
         <i class="icon devicon-css3-plain-wordmark"></i>
@@ -118,8 +118,7 @@
 
 
     <h2 class="projectHead" id="projects">Projects</h2>
-
-<div class="projects">
+    <div class="projects"> <!-- Projects are hosted on Netlify and Heroku -->
   <div class="container">
     <div class="card bg-transparent border border-white rounded m-3 p-2">
       <h3 id='projectTitle'>Tic-Tac-Toe</h3>
@@ -129,7 +128,7 @@
         <br>
         Uses HTML, CSS and Javascript.</p>
       <div class="cardButtons">
-        <button class="cardButton" type="button" onclick="window.open('https://github.com/eckmanmatt/tic-tac-toe/tree/master', '_blank')">Live </button>
+        <button class="cardButton" type="button" onclick="window.open('https://matteckman-tictactoe.netlify.app/', '_blank')">Live </button>
         <button class="cardButton"type="button" onclick="window.open('https://github.com/eckmanmatt/tic-tac-toe/tree/master', '_blank')">Code</button>
       </div>
     </div>
@@ -161,7 +160,7 @@
     </div>
 </div>
 
-<div class="divider text-center">
+    <div class="divider text-center">
 
   <span class="dot"></span>
   <span class="dot"></span>
@@ -171,40 +170,42 @@
 </div>
 
 
-<h2 class="resumeHead" id='resume'>Resume</h2>
-
-    <div class="resume container">
+    <h2 class="resumeHead" id='resume'>Resume</h2> <!-- CSS media query changes display for this section -->
+    <div class="resume container"> <!-- Hidden when in mobile view -->
       <iframe class = 'resumeFile' src = "resume_linkedin.pdf">
       </iframe>
     </div>
-    <div class="resumeMobile container">
+
+    <div class="resumeMobile container"> <!-- Hidden when NOT in mobile view -->
       <h5>Test Resume</h5>
     </div>
 
-    <div class="divider text-center">
-
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <br>
-      <span class="dot"></span>
-
+    <div class= "links"> <!-- jquery -->
     </div>
 
-    <h2 class="contactHead" id='contact'>Contact</h2>
-
-        <div class="contact container">
-
-
-
-        </div>
-
-    <div class= "links">
-       <!-- jquery -->
+    <div class= "pageNav"> <!-- jquery -->
     </div>
 
-    <div class= "pageNav">
-      <!-- jquery -->
-    </div>
+
+    <!-- <h2 class="contactHead" id='contact'>Contact</h2>
+          <div class="contact container" id="contact_form">
+            <form name="contact" action="">
+              <fieldset>
+                <div class="input-box">
+                  <input type="text" name="name" id="name" minlength="3" placeholder="Name" class="text-input" required/>
+                </div>
+
+                <div class="input-box">
+                  <input type="email" name="email" id="email" placeholder="Email" class="text-input"/>
+                </div>
+
+                <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
+              </fieldset>
+            </form>
+          </div> -->
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

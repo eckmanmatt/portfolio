@@ -28,7 +28,6 @@ const showTopNav = () => {
 
 $(() => {
 
-
 // //####TOGGLE MENU TO DISPLAY
 //   $('#toggle').on('click', hideTopNav)
 //   $('#toggle').on('click', showTopNav)
