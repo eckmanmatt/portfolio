@@ -1,9 +1,11 @@
-# portfolioFINAL
+# Matt Eckman
+## Software Engineer
 
-Used primarily HTML, jquery, Javascript and CSS.
+### https://meckman-portfolio.netlify.app/
 
-By day 4 came around, I probably had scrapped my idea/plan and clean slated things about 5 times. each time I did, I felt more confident with the language I was using. No doubt I faced some issues and confusion but made it easier to rewrite and know what I building the next time.
+Thank you for visiting the Github for my portfolio!
 
-https://verdant-dusk-88782f.netlify.app/
+This portfolio was initially created during a coding bootcamp and has since been added to and built upon.
 
-https://github.com/eckmanmatt/portfolioFINAL
+Please reach out to me if you have any questions.
+matt.eckman@icloud.com
