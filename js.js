@@ -58,9 +58,9 @@ $(() => {
 
   $('.pageNav').append($('<a>').attr('onClick', "document.getElementById('resume').scrollIntoView()").attr('target','_blank').addClass('linkR fa fa-briefcase').attr('title','Scroll to Resume'))
 
-  $('.pageNav').append($('<a>').attr('onClick', "document.getElementById('contact').scrollIntoView()").attr('target','_blank').addClass('linkR fa fa-at').attr('title','Scroll to Contact'))
-
-
+  // $('.pageNav').append($('<a>').attr('onClick', "document.getElementById('contact').scrollIntoView()").attr('target','_blank').addClass('linkR fa fa-at').attr('title','Scroll to Contact'))
+  //
+  //
 
 
 
