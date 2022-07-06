@@ -49,7 +49,7 @@ $(() => {
 
   $('.links').append($('<a>').attr('href', 'https://codepen.io/matteckman/').attr('target','_blank').addClass('linkL fa fa-codepen'))
 
-  $('.links').append($('<a>').attr('href', 'https://open.spotify.com/user/matt.eckman/').attr('target','_blank').addClass('linkL fa fa-spotify'))
+  // $('.links').append($('<a>').attr('href', 'https://open.spotify.com/user/matt.eckman/').attr('target','_blank').addClass('linkL fa fa-spotify'))
 
 
 
